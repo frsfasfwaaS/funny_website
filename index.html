@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quix's Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="terminal">
+        <div class="terminal-header">
+            <div class="buttons">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+            </div>
+            <span class="title">quix@portfolio: ~</span>
+        </div>
+        <div class="terminal-content">
+            <p class="output">Welcome to Quix's portfolio terminal!</p>
+            <p class="output">Type <span class="command">help</span> to get started.</p>
+            <div id="input-line">
+                <span class="prompt">quix@portfolio:~$</span>
+                <input type="text" id="command-input" autofocus>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Modal -->
+    <div id="projects-modal" style="display: none;">
+        <div class="modal-header" id="modal-drag-area">
+            <span class="modal-title">Projects</span>
+            <div class="modal-controls">
+                <button id="maximize-button">🗖</button>
+                <button id="close-button">✖</button>
+            </div>
+        </div>
+        <div class="modal-content">
+            <div class="project-slot">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>CyberSec Analyzer - A tool for scanning vulnerabilities.</p>
+                    <a href="https://example.com/project1" target="_blank">View Project</a>
+                </div>
+            </div>
+            <!-- Add more project slots as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
